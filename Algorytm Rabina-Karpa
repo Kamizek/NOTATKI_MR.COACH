@@ -1,0 +1,12 @@
+Algorytm Rabina-Karpa to algorytm wyszukiwania wzorca, który wykorzystuje funkcję skrótu do porównywania wzorca z tekstem. Algorytm ten został opracowany w 1987 roku przez Michaela O. Rabin i Richarda M. Karp.
+
+Implementacja:
+Algorytm Rabina-Karpa działa w następujący sposób:
+
+Oblicz skrót (hash) wzorca.
+Oblicz skrót pierwszego podciągu tekstu o długości równej długości wzorca.
+Porównaj obliczone skróty. Jeśli są one równe, porównaj wzorzec z podciągiem tekstu dokładnie. Jeśli nie, przesuń okno o jedną pozycję w prawo i oblicz skrót następnego podciągu tekstu.
+Algorytm ten używa modułu liczby pierwszej do obliczenia skrótu wzorca i skrótu podciągu tekstu. W ten sposób uniknięte są kolizje skrótów. Przesunięcie okna o jedną pozycję w prawo można wykonać szybko, ponieważ można wykorzystać już obliczony skrót i odjąć wartość skrótu usuniętego znaku z początku okna, a następnie dodać wartość skrótu nowego znaku.
+
+Przeznaczenie:
+Algorytm Rabina-Karpa jest używany do wyszukiwania wzorca w tekście w wielu dziedzinach, takich jak przetwarzanie języka naturalnego, przetwarzanie obrazów i dźwięku, wyszukiwanie w bazach danych, itp. Jest on szczególnie użyteczny w przypadku długich wzorców, ponieważ jego czas działania jest zależny od długości wzorca, a nie od długości tekstu, co sprawia, że jest bardziej efektywny niż niektóre inne algorytmy wyszukiwania wzorców. Algorytm ten jest również przydatny w przypadkach, gdy długość wzorca jest zmieniająca się lub gdy istnieje wiele wzorców, które trzeba wyszukać w jednym tekście.
