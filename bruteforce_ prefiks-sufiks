@@ -1,0 +1,13 @@
+Algorytm siłowy (ang. brute force) - to metoda rozwiązywania problemów, która polega na przetestowaniu wszystkich możliwych rozwiązań i wybraniu najlepszego. Algorytm siłowy jest najprostszym sposobem rozwiązania problemów, ale często jest również najmniej wydajny.
+Implementacja:
+Implementacja algorytmu siłowego polega na wypróbowaniu wszystkich możliwych rozwiązań w celu znalezienia najlepszego. Na przykład, aby znaleźć minimalną wartość z listy, algorytm siłowy polega na przejściu przez wszystkie elementy listy i zapamiętaniu wartości minimalnej.
+
+Przeznaczenie:
+Algorytm siłowy jest używany w wielu dziedzinach, takich jak matematyka, informatyka, kryptografia, sztuczna inteligencja itp. Przykłady zastosowania algorytmu siłowego to łamanie haseł, kryptografia klucza publicznego, wyszukiwanie wzorca w tekście, sortowanie itp.
+
+Algorytm prefiks-sufiks (ang. prefix-suffix) - to technika stosowana w algorytmach wyszukiwania wzorców, która pozwala na szybkie porównanie wzorca z tekstem. Technika ta polega na utworzeniu dwóch tablic: tablicy prefiksowej i tablicy sufiksowej. Tablica prefiksowa zawiera informacje o najdłuższym prefiksie wzorca, który jest jednocześnie sufiksem pewnej wcześniejszej części wzorca. Tablica sufiksowa zawiera informacje o najdłuższym sufiksie wzorca, który jest jednocześnie prefiksem pewnej wcześniejszej części wzorca.
+Implementacja:
+Implementacja algorytmu prefiks-sufiks polega na przetworzeniu wzorca przed wyszukiwaniem, aby utworzyć tablice prefiksową i sufiksową. Następnie wyszukiwanie odbywa się w taki sposób, że porównujemy znaki tekstu z wzorcem, poruszając się od lewej do prawej. Gdy porównywane znaki nie pasują, poruszamy się o określoną liczbę znaków, którą określa tablica prefiksowa i sufiksowa.
+
+Przeznaczenie:
+Algorytm prefiks-sufiks jest używany w wielu algorytmach wyszukiwania wzorców, takich jak algorytm Knutha-Morrisa-Pratta (KMP) i Boyera-Moore'a. Jest to szybszy sposób wyszukiwania wzorca niż algorytm siłowy.
