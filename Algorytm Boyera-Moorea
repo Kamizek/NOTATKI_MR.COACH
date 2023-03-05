@@ -1,0 +1,12 @@
+Algorytm Boyera-Moorea to algorytm wyszukiwania wzorca w tekście, który został opracowany w 1977 roku przez Roberta Boyera i J. Strothera Moore'a. Jest to jedna z najszybszych znanych metod wyszukiwania wzorców w tekście.
+
+Implementacja:
+Algorytm Boyera-Moorea działa w następujący sposób:
+
+Zainicjuj tablice przesunięć. Tablica ta określa, o ile przesunąć wzorzec w prawo w przypadku braku dopasowania, aby omijać fragmenty tekstu, które na pewno nie zawierają wzorca. Dla każdego znaku alfabetu, który może pojawić się w tekście, oblicz wartość odpowiadającej mu pozycji w tablicy przesunięć.
+Przesuń wzorzec w prawo i porównaj kolejne znaki z tekstem. Jeśli znaki się różnią, użyj tablicy przesunięć, aby przesunąć wzorzec w prawo o odpowiednią ilość pozycji. Jeśli znaki się zgadzają, kontynuuj porównywanie kolejnych znaków.
+Jeśli wzorzec został całkowicie dopasowany w tekście, zwróć pozycję w tekście, w której znaleziono wzorzec. W przeciwnym przypadku kontynuuj wyszukiwanie.
+Algorytm ten jest oparty na heurystykach i ma na celu zmniejszenie liczby porównań pomiędzy wzorcem a tekstem, co prowadzi do przyspieszenia działania algorytmu.
+
+Przeznaczenie:
+Algorytm Boyera-Moorea jest stosowany w wielu dziedzinach, takich jak przetwarzanie języka naturalnego, przetwarzanie obrazów i dźwięku, wyszukiwanie w bazach danych, itp. Jest on szczególnie użyteczny w przypadku długich wzorców, ponieważ jego czas działania jest zależny od długości wzorca, a nie od długości tekstu, co sprawia, że jest bardziej efektywny niż niektóre inne algorytmy wyszukiwania wzorców. Algorytm ten jest również przydatny w przypadkach, gdy długość wzorca jest zmieniająca się lub gdy istnieje wiele wzorców, które trzeba wyszukać w jednym tekście.
